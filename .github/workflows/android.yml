@@ -54,7 +54,7 @@ jobs:
       - name: Build APKs
         env:
           SKETCHUB_API_KEY: ${{ secrets.SKETCHUB_API_KEY }}
-        run: gradle assembleDebug assembleRelease
+        run: gradle assembleDebug assembleRelease --no-daemon --stacktrace
 
       - name: Set short SHA
         id: set_sha

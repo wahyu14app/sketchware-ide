@@ -121,7 +121,7 @@ dependencies {
 
     implementation libs.bundles.image
 
-    implementation platform(libs.sora.editor)
+    implementation libs.sora.editor
     implementation libs.bundles.editor.and.lang
 
     implementation libs.bundles.coil
