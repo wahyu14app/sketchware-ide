@@ -48,8 +48,7 @@ scpkix-jdk15on = { group = "org.bouncycastle", name = "bcpkix-jdk15on", version 
 markwon = { group = "io.noties.markwon", name = "core", version = "4.6.2" }
 ecj = { group = "org.eclipse.jdt", name = "ecj", version = "3.35.0" }
 stax-api = { group = "stax", name = "stax-api", version = "1.0.1" }
-dependencyresolver = { group = "com.github.Iyxan23", name = "DependencyResolver", version = "1.0.5" }
-filepicker = { group = "com.github.angads25", name = "filepicker", version = "1.1.1" }
+Dependencyresolver = { group = "com.github.Cosmic-Ide", name = "DependencyResolver", version = "1.1.1" }filepicker = { group = "com.github.angads25", name = "filepicker", version = "1.1.1" }
 libsu = { group = "com.github.topjohnwu.libsu", name = "core", version = "5.2.2" }
 insetter = { group = "dev.chrisbanes.insetter", name = "insetter", version = "0.6.1" }
 javaparser-symbol-solver = { group = "com.github.javaparser", name = "javaparser-symbol-solver-core", version = "3.25.7" }
