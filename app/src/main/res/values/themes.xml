@@ -1,0 +1,88 @@
+<resources>
+    <style name="Base.Theme.SketchwareIDE" parent="Scheme.SketchwareIDE.DayNight" />
+    <style name="Theme.SketchwareIDE" parent="Platform.Theme.SketchwareIDE">
+        <item name="bottomNavigationStyle">@style/Widget.SketchwareIDE.BottomNavigationView</item>
+        <item name="chipStyle">@style/Widget.SketchwareIDE.Chip</item>
+        <item name="collapsingToolbarLayoutStyle">?attr/collapsingToolbarLayoutLargeStyle</item>
+        <item name="collapsingToolbarLayoutLargeSize">@dimen/collapsing_toolbar_large_size</item>
+        <item name="collapsingToolbarLayoutLargeStyle">@style/Widget.SketchwareIDE.CollapsingToolbar</item>
+        <item name="homeAsUpIndicator">@drawable/abc_ic_ab_back_material</item>
+        <item name="textInputStyle">@style/Widget.SketchwareIDE.TextInputLayout</item>
+        <item name="switchPreferenceCompatStyle">
+            @style/Preference.SketchwareIDE.SwitchPreferenceCompat
+        </item>
+        <item name="tabStyle">@style/Widget.SketchwareIDE.TabLayout</item>
+        <item name="alertDialogTheme">@style/ThemeOverlay.SketchwareIDE.AlertDialog</item>
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.SketchwareIDE.AlertDialog</item>
+        <item name="popupMenuStyle">@style/Widget.Material3.PopupMenu</item>
+        <item name="android:popupMenuStyle">@style/Widget.Material3.PopupMenu</item>
+        <item name="materialCardViewStyle">?attr/materialCardViewFilledStyle</item>
+        <item name="materialCardViewFilledStyle">@style/Widget.SketchwareIDE.CardView</item>
+        <!-- Type styles. -->
+        <item name="textAppearanceDisplayLarge">@style/TextAppearance.SketchwareIDE.DisplayLarge</item>
+        <item name="textAppearanceDisplayMedium">@style/TextAppearance.SketchwareIDE.DisplayMedium</item>
+        <item name="textAppearanceDisplaySmall">@style/TextAppearance.SketchwareIDE.DisplaySmall</item>
+        <item name="textAppearanceHeadlineLarge">@style/TextAppearance.SketchwareIDE.HeadlineLarge</item>
+        <item name="textAppearanceHeadlineMedium">@style/TextAppearance.SketchwareIDE.HeadlineMedium</item>
+        <item name="textAppearanceHeadlineSmall">@style/TextAppearance.SketchwareIDE.HeadlineSmall</item>
+        <item name="textAppearanceTitleLarge">@style/TextAppearance.SketchwareIDE.TitleLarge</item>
+        <item name="textAppearanceTitleMedium">@style/TextAppearance.SketchwareIDE.TitleMedium</item>
+        <item name="textAppearanceTitleSmall">@style/TextAppearance.SketchwareIDE.TitleSmall</item>
+        <item name="textAppearanceBodyLarge">@style/TextAppearance.SketchwareIDE.BodyLarge</item>
+        <item name="textAppearanceBodyMedium">@style/TextAppearance.SketchwareIDE.BodyMedium</item>
+        <item name="textAppearanceBodySmall">@style/TextAppearance.SketchwareIDE.BodySmall</item>
+        <item name="textAppearanceLabelLarge">@style/TextAppearance.SketchwareIDE.LabelLarge</item>
+        <item name="textAppearanceLabelMedium">@style/TextAppearance.SketchwareIDE.LabelMedium</item>
+        <item name="textAppearanceLabelSmall">@style/TextAppearance.SketchwareIDE.LabelSmall</item>
+        <item name="textAppearanceBodyLargeEmphasized">@style/TextAppearance.SketchwareIDE.BodyLargeEmphasized</item>
+    </style>
+
+    <style name="Theme.SketchwareIDE.Main">
+        <item name="navigationViewStyle">@style/Widget.SketchwareIDE.NavigationView.Main</item>
+    </style>
+
+    <style name="Theme.SketchwareIDE.ProjectPreview">
+        <item name="bottomSheetDialogTheme">@style/ThemeOverlay.SketchwareIDE.BottomSheetDialog
+        </item>
+    </style>
+
+    <style name="Theme.SketchwareIDE.SmallToolbar">
+        <item name="actionBarSize">@dimen/mtrl_toolbar_default_height</item>
+        <item name="toolbarStyle">@style/Widget.SketchwareIDE.Toolbar.SmallText</item>
+    </style>
+
+    <style name="Theme.SketchwareIDE.Starting.Base" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenAnimationDuration">850</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/splash_logo</item>
+        <item name="windowSplashScreenBackground">@color/splash_bg_color</item>
+        <item name="postSplashScreenTheme">@style/Theme.SketchwareIDE.Main</item>
+
+        <item name="android:navigationBarColor">@color/splash_bg_color</item>
+        <item name="android:statusBarColor">@color/splash_bg_color</item>
+        <item name="android:windowLightStatusBar">@bool/is_light_theme</item>
+        <item name="android:windowLightNavigationBar">@bool/is_light_theme
+        </item>
+    </style>
+
+    <style name="Theme.SketchwareIDE.Starting" parent="Theme.SketchwareIDE.Starting.Base" />
+
+    <style name="Platform.V21.Theme.SketchwareIDE" parent="Base.Theme.SketchwareIDE">
+        <item name="android:navigationBarColor">@android:color/black</item>
+        <item name="android:statusBarColor">@android:color/black</item>
+    </style>
+    <style name="Platform.Theme.SketchwareIDE" parent="Platform.V21.Theme.SketchwareIDE" />
+
+    <!-- Sketchware Pro compatibility styles mapping to Sketchware IDE themes -->
+    <style name="Base.Theme.SketchwarePro" parent="Base.Theme.SketchwareIDE" />
+    <style name="Theme.SketchwarePro" parent="Theme.SketchwareIDE" />
+    <style name="Theme.SketchwarePro.Starting.Base" parent="Theme.SketchwareIDE.Starting.Base" />
+    <style name="Theme.SketchwarePro.Starting" parent="Theme.SketchwareIDE.Starting" />
+    <style name="Theme.SketchwarePro.SmallToolbar" parent="Theme.SketchwareIDE.SmallToolbar" />
+    <style name="Theme.SketchwarePro.ProjectPreview" parent="Theme.SketchwareIDE.ProjectPreview" />
+    <style name="Platform.V21.Theme.SketchwarePro" parent="Base.Theme.SketchwarePro" />
+    <style name="Platform.Theme.SketchwarePro" parent="Platform.V21.Theme.SketchwarePro" />
+
+    <style name="Widget.SketchwarePro.TextInputLayout.ExposedDropdownMenu" parent="Widget.SketchwareIDE.TextInputLayout.ExposedDropdownMenu" />
+    <style name="ThemeOverlay.SketchwarePro.Chip.ProjectPreview" parent="ThemeOverlay.SketchwareIDE.Chip.ProjectPreview" />
+    <style name="Widget.SketchwarePro.Toolbar.SmallText" parent="Widget.SketchwareIDE.Toolbar.SmallText" />
+</resources>

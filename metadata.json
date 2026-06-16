@@ -1,0 +1,6 @@
+{
+  "name": "Sketchware IDE",
+  "description": "An Android IDE that allows you to build, customize, and run your own Android applications visually.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
