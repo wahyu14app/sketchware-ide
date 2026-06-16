@@ -8,6 +8,7 @@ lifecycleRuntimeKtx = "2.6.2"
 activityCompose = "1.8.2"
 kotlin = "1.9.22"
 composeBom = "2023.10.01"
+
 # Sketchware Pro versions
 material = "1.11.0"
 appcompat = "1.6.1"
@@ -40,6 +41,7 @@ firebase-auth = { group = "com.google.firebase", name = "firebase-auth" }
 firebase-database = { group = "com.google.firebase", name = "firebase-database" }
 firebase-storage = { group = "com.google.firebase", name = "firebase-storage" }
 sora-editor = { group = "io.github.Rosemoe.sora-editor", name = "editor", version.ref = "soraEditor" }
+
 # Stubs for missing libs to satisfy Gradle evaluation
 kotlin-compiler = { group = "org.jetbrains.kotlin", name = "kotlin-compiler-embeddable", version.ref = "kotlin" }
 sdklib = { group = "com.android.tools", name = "sdklib", version = "31.2.2" }
@@ -48,7 +50,8 @@ scpkix-jdk15on = { group = "org.bouncycastle", name = "bcpkix-jdk15on", version 
 markwon = { group = "io.noties.markwon", name = "core", version = "4.6.2" }
 ecj = { group = "org.eclipse.jdt", name = "ecj", version = "3.35.0" }
 stax-api = { group = "stax", name = "stax-api", version = "1.0.1" }
-Dependencyresolver = { group = "com.github.Cosmic-Ide", name = "DependencyResolver", version = "1.1.1" }filepicker = { group = "com.github.angads25", name = "filepicker", version = "1.1.1" }
+Dependencyresolver = { group = "com.github.Cosmic-Ide", name = "DependencyResolver", version = "1.1.1" }
+filepicker = { group = "com.github.angads25", name = "filepicker", version = "1.1.1" }
 libsu = { group = "com.github.topjohnwu.libsu", name = "core", version = "5.2.2" }
 insetter = { group = "dev.chrisbanes.insetter", name = "insetter", version = "0.6.1" }
 javaparser-symbol-solver = { group = "com.github.javaparser", name = "javaparser-symbol-solver-core", version = "3.25.7" }
@@ -59,6 +62,7 @@ ui = ["androidx-appcompat", "material", "androidx-constraintlayout", "androidx-s
 image = ["coil"]
 networking = ["okhttp", "retrofit"]
 firebase = ["firebase-analytics", "firebase-crashlytics", "firebase-auth", "firebase-database", "firebase-storage"]
+
 # Placeholders for complex bundles
 editor-and-lang = ["sora-editor"]
 coil = ["coil"]
